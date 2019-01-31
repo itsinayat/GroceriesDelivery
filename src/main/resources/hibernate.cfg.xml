@@ -16,10 +16,6 @@
          <property name="connection.pool_size">10</property>		
   		
          <!-- Mention here all the model classes along with their package name -->		
-  		<mapping class="org.inayat.novo.ringelweb.model.UserModel"/>		
-  		<mapping class="org.inayat.novo.ringelweb.model.HelpTextModel"/>		
-  			<mapping class="org.inayat.novo.ringelweb.model.GfBfDataModel"/>		
-  		<mapping class="org.inayat.novo.ringelweb.model.FaqModel"/>		
- 		<mapping class="org.inayat.novo.ringelweb.model.CelebrationModel"/>		
+  		<mapping class="org.inayat.novo.ringelweb.model.UserModel"/>	
      </session-factory>		
  </hibernate-configuration> 

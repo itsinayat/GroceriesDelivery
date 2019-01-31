@@ -4,7 +4,8 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <property name="context-root" value="ringelweb"/>
-        <property name="java-output-path" value="/ringelweb/target/classes"/>
+        <property name="java-output-path" value="/GroceriesDelivery/target/classes"/>
     </wb-module>
 </project-modules>

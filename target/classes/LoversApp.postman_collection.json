@@ -1,0 +1,168 @@
+{
+	"variables": [],
+	"info": {
+		"name": "LoversApp",
+		"_postman_id": "c78998ca-6d65-28ed-2ac0-eb458b2ada1a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/ringelweb/webapi/user/login",
+			"request": {
+				"url": "https://lovewar.herokuapp.com/webapi/user/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Transfer-Encoding",
+						"value": "chunked",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"madan\",\n    \"username\": \"madan\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ringelweb/webapi/user/signup",
+			"request": {
+				"url": "https://lovewar.herokuapp.com/webapi/user/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\t\"username\":\"saurabh\",\n\t\"password\":\"saurabh\",\n\t\"fname\":\"rahul\",\n\t\"lname\":\"verma\",\n\t\"mobile\":\"99999999999\",\n\t\"email\":\"rahul@gmail.com\",\n\t\"userType\":\"beginer\",\n\t\"secretans\":\"babu\"\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ringelweb/webapi/user/forgepassword",
+			"request": {
+				"url": {
+					"raw": "https://lovewar.herokuapp.com/webapi/user/forgetpassword?secretans=babu&username=madan",
+					"protocol": "https",
+					"host": [
+						"lovewar",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"webapi",
+						"user",
+						"forgetpassword"
+					],
+					"query": [
+						{
+							"key": "secretans",
+							"value": "babu",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "username",
+							"value": "madan",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "app",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://lovewar.herokuapp.com/webapi/user/getHelpText",
+			"request": {
+				"url": "https://lovewar.herokuapp.com/webapi/user/getHelpText",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ringelweb/webapi/user/updategfbf",
+			"request": {
+				"url": "https://lovewar.herokuapp.com/webapi/user/updategfbf",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":\"20\",\t\n\"name\":\"sweety raut1\",\n\"age\":\"25\",\n\"sex\":\"F\",\n\"whatsappno\":\"96969696969\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ringelweb/webapi/user/getFaq",
+			"request": {
+				"url": "https://lovewar.herokuapp.com/webapi/user/getFaq",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ringelweb/webapi/getCelebrationDetails",
+			"request": {
+				"url": "https://lovewar.herokuapp.com/webapi/user/getCelebrationDetails",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
